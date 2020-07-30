@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8"></meta>
+		<title>Christopher Andrade - Index</title>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" href = "styles.css"></link>
+	</head>
+
+	<body>
+		<div class = "total-container">
+			<div class = "navigation">
+				<div class = "navigation-left">
+					<div class = "navigation-link navigation-link-active">
+						<a href = "index.html">Index</a>
+					</div>
+
+					<div class = "navigation-link">
+						<a href = "about.html">About</a>
+					</div>
+				</div>
+
+				<div class = "navigation-right">
+					<div>Christopher Andrade</div>
+				</div>
+			</div>
+
+			<div class = "portfolio">
+				<div class = "portfolio-tile">
+					<div class = "portfolio-tile-background" style = "background-image:url(images/backgrounds/github.jpg)"></div>
+					
+					<div class = "portfolio-tile-content">
+						<div class = "portfolio-tile-logo">
+							<a href = "https://github.com/christopherandrade716/" target="_blank">
+								<img src = "images/logos/github.png"></img>
+							</a>
+						</div>
+
+						<div class = "portfolio-tile-caption">Here is my GitHub where I upload all my open-source programming related work.</div>
+					</div>
+				</div>
+
+				<div class = "portfolio-tile">
+					<div class = "portfolio-tile-background" style = "background-image:url(images/backgrounds/linkedin.jpg)"></div>
+					
+					<div class = "portfolio-tile-content">
+						<div class = "portfolio-tile-logo">
+							<a href = "https://www.linkedin.com/in/christopherandrade716/" target="_blank">
+								<img src = "images/logos/linkedin.png"></img>
+							</a>
+						</div>
+
+						<div class = "portfolio-tile-caption">Here is my LinkedIn which contains all the information you need to know about myself.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script>
+		const portfolioItems = document.querySelectorAll('.portfolio-tile');
+
+		portfolioItems.forEach(portfolioItem => {
+			portfolioItem.addEventListener('mouseover', () => {
+				portfolioItem.childNodes[1].classList.remove('portfolio-tile-background-lighten');
+				portfolioItem.childNodes[1].classList.add('portfolio-tile-background-darken');
+				});
+
+			portfolioItem.addEventListener('mouseout', () => {
+				portfolioItem.childNodes[1].classList.add('portfolio-tile-background-lighten');
+				});
+			});
+	</script>
+</html>

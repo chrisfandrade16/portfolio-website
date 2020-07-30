@@ -1,0 +1,169 @@
+/* Master Styles */
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0px;
+}
+
+.total-container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.two-column-container {
+	display: grid;
+	grid-template-columns: 0.25fr 0.75fr;
+}
+
+/* Navigation Styles */
+
+.navigation {
+	display: flex;
+	padding: 25px;
+	justify-content: space-between;
+}
+
+.navigation-left {
+	display: flex;
+}
+
+.navigation > .navigation-left > div {
+	font-size: 0.75em;
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+
+.navigation-right {
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.navigation-link {
+	height: 25px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.navigation-link a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.navigation-link:hover {
+	border-bottom: 1px solid black;
+}
+
+.navigation-link a:hover {
+	color: black; 
+	font-weight: 1000;
+}
+
+.navigation-link-active {
+	border-bottom: 1px solid black;
+}
+
+/* Portfolio Styles */
+
+.portfolio {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-tile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.portfolio-tile-background {
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.portfolio-tile-background-darken {
+	transition: 1s;
+	filter: brightness(10%);
+}
+
+.portfolio-tile-background-lighten {
+	transition: 1s;
+	filter: brightness(100%);
+}
+
+.portfolio-tile-content {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.portfolio-tile-logo img {
+	transition: 1s;
+	width: 25%;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.portfolio-tile-logo:hover img {
+	transition: 1s;
+	width: 35%;
+}
+
+.portfolio-tile:hover .portfolio-tile-logo {
+	transition: 1.5s;
+	filter: invert(100%);
+}
+
+.portfolio-tile .portfolio-tile-logo {
+	transition: 1.5s;
+	filter: invert(0%)
+}
+
+.portfolio-tile-caption {
+	transition: 0.75s;
+	font-weight: 500;
+	color: transparent;
+}
+
+.portfolio-tile:hover .portfolio-tile-caption {
+	transition: 1s;
+	font-weight: 500;
+	color: cyan;
+	padding-top: 30px;
+}
+
+/* About Tab Styles */
+
+.about {
+	display: grid;
+	grid-template-columns: 0.35fr 1fr;
+}
+
+.about-portrait img {
+	width: 100%;
+}
+
+.about-text {
+		padding-left: 35px;
+		padding-right: 35px;
+}
+
+.about-text h1 {
+	color: lightseagreen; 
+}
