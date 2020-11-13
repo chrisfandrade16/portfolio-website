@@ -2,74 +2,163 @@
 
 <html>
 	<head>
-		<meta charset = "utf-8"></meta>
-		<title>Christopher Andrade - Index</title>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-		<link rel = "stylesheet" href = "styles.css"></link>
+        <title>Chris Andrade - Software Engineer</title>
+		<meta charset="utf-8"></meta>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap"></link>
+        <link rel="stylesheet" href="styles.css"></link>
+        <link rel="icon" href="favicon.ico"><link>
 	</head>
 
 	<body>
-		<div class = "total-container">
-			<div class = "navigation">
-				<div class = "navigation-left">
-					<div class = "navigation-link navigation-link-active">
-						<a href = "index.html">Index</a>
-					</div>
+		<div class="total">
+			<div class="navigator">
+				<div class="navigator-left">
+                    <a class="navigator-left-home" href="#">
+                        <img class="logo" src="./images/logo.png"></img>
+                    </a>
+                </div>
+                
+                <div class="navigator-middle">
+                    <a class="navigator-middle-about" href="#about">
+                        About
+                    </a>
 
-					<div class = "navigation-link">
-						<a href = "about.html">About</a>
-					</div>
+                    <a class="navigator-middle-projects" href="#projects">
+                        Projects
+                    </a>
 				</div>
 
-				<div class = "navigation-right">
-					<div>Christopher Andrade</div>
-				</div>
-			</div>
+				<div class="navigator-right">
+                    <a class="navigator-right-linkedin" href="https://www.linkedin.com/in/chrisfandrade16/" target=”_blank”>
+                        <img class="linkedin" src="./images/linkedin.png"></img>
+                    </a>
 
-			<div class = "portfolio">
-				<div class = "portfolio-tile">
-					<div class = "portfolio-tile-background" style = "background-image:url(images/backgrounds/github.jpg)"></div>
-					
-					<div class = "portfolio-tile-content">
-						<div class = "portfolio-tile-logo">
-							<a href = "https://github.com/christopherandrade716/" target="_blank">
-								<img src = "images/logos/github.png"></img>
-							</a>
-						</div>
+                    <a class="navigator-right-github" href="https://www.github.com/chrisfandrade16" target=”_blank”>
+                        <img class="github" src="./images/github.png"></img>
+                    </a>
 
-						<div class = "portfolio-tile-caption">Here is my GitHub where I upload all my open-source programming related work.</div>
-					</div>
-				</div>
+                    <a class="navigator-right-stackoverflow" href="https://www.stackoverflow.com/users/14622421/chris-andrade" target=”_blank”>
+                        <img class="github" src="./images/stackoverflow.png"></img>
+                    </a>
 
-				<div class = "portfolio-tile">
-					<div class = "portfolio-tile-background" style = "background-image:url(images/backgrounds/linkedin.jpg)"></div>
-					
-					<div class = "portfolio-tile-content">
-						<div class = "portfolio-tile-logo">
-							<a href = "https://www.linkedin.com/in/christopherandrade716/" target="_blank">
-								<img src = "images/logos/linkedin.png"></img>
-							</a>
-						</div>
+                    <a class="navigator-right-twitter" href="https://www.twitter.com/chrisfandrade16" target=”_blank”>
+                        <img class="twitter" src="./images/twitter.png"></img>
+                    </a>
 
-						<div class = "portfolio-tile-caption">Here is my LinkedIn which contains all the information you need to know about myself.</div>
-					</div>
+                    <a class="navigator-right-facebook" href="https://www.facebook.com/chrisfandrade16/" target=”_blank”>
+                        <img class="facebook" src="./images/facebook.png"></img>
+                    </a>
+
+                    <a class="navigator-right-instagram" href="https://www.instagram.com/chrisfandrade16/" target=”_blank”>
+                        <img class="instagram" src="./images/instagram.png"></img>
+                    </a>
 				</div>
 			</div>
-		</div>
-	</body>
 
-	<script>
-		const portfolioItems = document.querySelectorAll('.portfolio-tile');
+            <div class="content" id="content">
+                <div class="home" id="home">
+                    <div class="home-left">
+                        <h1>Hi, I'm Chris Andrade.</h1>
+                        <h2>Welcome to my website.</h2>
+                    </div>
 
-		portfolioItems.forEach(portfolioItem => {
-			portfolioItem.addEventListener('mouseover', () => {
-				portfolioItem.childNodes[1].classList.remove('portfolio-tile-background-lighten');
-				portfolioItem.childNodes[1].classList.add('portfolio-tile-background-darken');
-				});
+                    <div class="home-right">
+                        <a class="home-right-email" href="mailto:chrisfandrade16@gmail.com">
+                            Email Me
+                        </a>
 
-			portfolioItem.addEventListener('mouseout', () => {
-				portfolioItem.childNodes[1].classList.add('portfolio-tile-background-lighten');
-				});
-			});
-	</script>
+                        <a class="home-right-resume" href="./resume.pdf" target=”_blank”>
+                            Open Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about" id="about">
+                    <div class="about-left">
+                        <img class="portrait" src="./images/portrait.jpg">
+                    </div>
+
+                    <div class=about-right>
+                        <h1>About me, you ask?</h1>
+                        <p>
+                            Hopefully this is the last time I'll have to say it, but my name is Chris Andrade! You can see me there on the left. I'm currently a third year Software Engineering student
+                            at McMaster University  in Hamilton, Ontario, Canada. As of right now (seriously, right now!) I'm looking for spring internships lasting 12-16 months, specifically as a web developer, hence
+                            the creation of this website of course (it was also good fun). I am able to do full-stack, so backend, frontend, or both roles are all great to me. In my spare time, I also have some interest
+                            in information security and video game development :).
+                        </p>
+                        <br>
+                        <p>
+                            I'm currently experimenting with the MERN web development stack, so that is my current go-to, but really, I'm still a student so I'm open to anything. I would not mind learning any other
+                            stacks or any other languages. At this point, I've learned so many that I seem to know the concepts quite well, which make learning new things a much quicker process. If you want to see
+                            all the things I've worked on (that I'm at least slightly proud to show), check out my GitHub. For the larger projects, scroll down!
+                        </p>
+                        <br>
+                        <p>
+                            This is the part where I'm not sure if people care about, but hopefully you do. So, let's talk about my hobbies. In relation to my career, like I said I enjoy web development, game development,
+                            and security, even databasing and networks. I just can't get enough of the whole tree of software. With hobbies, I'm a learning guitar player and really love making music. I'm still a novice,
+                            but am currently reading some books to get better at composition. I also love writing both fiction (like blogs) and non-fiction (like sci-fi) in my spare time. Speaking of sci-fi, I also like, well,
+                            sci-non-fi? Ok, astronomy. I love astronomy. Lastly, I'm a big soccer fan (if you're a European I apologize, I meant football, I promise).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects" id="projects">
+                    <h1 class="projects-title">
+                        Projects
+                    </h1>
+
+                    <div class="projects-content">
+                        <div class="project-tile">
+                            <div class="project-tile-top">
+                                <a class="project-tile-top-spacenearby" href="https://spacenearby.herokuapp.com/" target=”_blank”>
+                                    <img class="spacenearby" src="./images/spacenearby.png"></img>
+                                </a>
+                            </div>
+
+                            <div class="project-tile-bottom">
+                                <p>
+                                    A web application that won 1st place at NASA SpaceApps Hackathon Hamilton 2020. Use current or given location and a radius to find nearby space related places you can go to! Goal was to encourage involvement in the local space industry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-tile">
+                            <div class="project-tile-top">
+                                <a class="project-tile-top-jamtogether" href="https://jam-together.herokuapp.com/" target=”_blank”>
+                                    <img class="jamtogether" src="./images/jamtogether.png"></img>
+                                </a>
+                            </div>
+
+                            <div class="project-tile-bottom">
+                                <p>
+                                    A web application for musicians to find people to jam with online during the pandemic. Create lobbies based on musical key and instrumentalists needed, and make friends!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-tile">
+                            <div class="project-tile-top">
+                                <a class="project-tile-top-tagwell" href="https://github.com/chrisfandrade16/android-tweet-searcher-app" target=”_blank”>
+                                    <img class="tagwell" src="./images/tagwell.png"></img>
+                                </a>
+                            </div>
+
+                            <div class="project-tile-bottom">
+                                <p>
+                                    An Android application to find Tweets hat relate to a user inputted set of words or hashtags, and sort it by popularity. Allows marketers to gauge how popular certain topics are on social media.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h5 class="footer-text">
+                    Made with My Hands
+                </h5>
+            </div>
+    </body>
+
+    <script src="main.js"></script>
 </html>
