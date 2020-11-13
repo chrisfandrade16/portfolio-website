@@ -1,1 +1,1 @@
-//location.hash = "";
+location.hash = "";
